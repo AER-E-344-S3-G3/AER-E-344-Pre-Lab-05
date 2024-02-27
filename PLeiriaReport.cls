@@ -12,6 +12,7 @@
 \usepackage{graphicx} % Required for including images
 \usepackage{amsmath} % Mathematical expressions
 \usepackage{amssymb} % Mathematical symbols
+\usepackage{siunitx} % SI units and quantities
 \usepackage[dvipsnames]{xcolor} % Using colors within the document
 \usepackage{tocbibind} % Add list of figures and tables of contents
 \usepackage{blindtext} % Generate dummy text
@@ -250,3 +251,9 @@
   breaklines=true,
   breakanywhere=true
 }
+
+% Configure "step" autoref macro
+\renewcommand{\itemautorefname}{Step}
+
+% Configure siunitx
+\sisetup{per-mode=symbol}
